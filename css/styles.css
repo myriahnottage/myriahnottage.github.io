@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+body {
+    background-image: linear-gradient(to right, rgba(128, 255, 223,0), rgba(128, 255, 223,1));
+}
+
