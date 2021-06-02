@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-image: linear-gradient(to right, rgba(128, 255, 223,0), rgba(128, 255, 223,1));
+    background-image: radial-gradient(Ivory 70%, #a1f7e2 85%, #99ffe6 95%);
+    height: 100vh;
 }
 
