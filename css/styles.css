@@ -7,10 +7,6 @@ body {
 
 .navbar {
     border: 2px solid none;
-    border-radius: 5em;
+    border-radius: 30px;
     margin: 2%;
-}
-
-.navbar-toggler:aria-expanded="true" {
-    border-radius: 0em;
 }
