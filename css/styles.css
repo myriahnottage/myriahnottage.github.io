@@ -1,7 +1,16 @@
 @charset "utf-8";
 
 body {
-    background-image: radial-gradient(Ivory 70%, #a1f7e2 85%, #99ffe6 95%);
+    background-image: radial-gradient(#e8fdf8 60%, #a1f7e2 90%, #99ffe6 95%);
     height: 100vh;
 }
 
+.navbar {
+    border: 2px solid none;
+    border-radius: 5em;
+    margin: 2%;
+}
+
+.navbar-toggler:aria-expanded="true" {
+    border-radius: 0em;
+}
