@@ -2,11 +2,21 @@
 
 body {
     background-image: radial-gradient(#e8fdf8 60%, #a1f7e2 90%, #99ffe6 95%);
-    height: 100vh;
+    height: 150vh;
 }
 
 .navbar {
     border: 2px solid none;
     border-radius: 30px;
     margin: 2%;
+}
+
+.first-item {
+    margin-top: 15vh;
+}
+
+.entry {
+    height: 30px;
+    max-width: 55vw;
+    background: hotpink;
 }
