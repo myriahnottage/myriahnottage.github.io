@@ -29,13 +29,15 @@
 <body>
 
     <div class="container">
-        <!--- NAV -->
+        <!--- NAV: gonna need to include this in side scroll and compensate spacing etc -->
         <nav class="navbar shadow-lg navbar-expand-lg fixed-top navbar-light text-dark bg-transparent">
             <!-- md & sm nav button-->
-            <button class="navbar-toggler shadow-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler shadow-sm" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <a class="navbar-brand" href="#">Navbar</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,23 +65,27 @@
             </div>
         </nav>
     </div>
-<!-- ITEMS -->
-    <div class="container d-flex justify-content-center sidescroll">
-        <div class="row">
-            <div class="jumbotron first-item entry py-5" href="#">
-                <h1 class="display-6">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              </div>
+    <!-- ITEMS -->
+    <div class="container d-flex sidescroll">
+        <div class="jumbotron bg-transparent first-item">
+            <h1 class="display-6">happyNoodle</h1>
+            <p class="lead">home page intro</p>
+            <hr class="my-4 bg-white">
+            <p>home page text</p>
         </div>
-        <div class="row">
-            <div class="jumbotron entry py-5" href="#">
-                <h1 class="display-6">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              </div>
+        <div class="jumbotron entry" href="#">
+            <h1 class="display-6">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        </div>
+        <div class="jumbotron entry" href="#">
+            <h1 class="display-6">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         </div>
     </div>
 

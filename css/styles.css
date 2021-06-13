@@ -28,7 +28,13 @@ body {
 }
 
 .first-item {
-    margin-top: 90vh;
+    color: white;
+    text-align: center;
+    margin-top: 15vh;
+    max-width: 55vw;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+    transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
 }
 
 .entry {
@@ -43,4 +49,8 @@ body {
 
 .entry:hover {
         box-shadow: 2px 2px 10px 5px rgb(255, 255, 255);
+}
+
+@media screen {
+        
 }
