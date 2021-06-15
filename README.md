@@ -10,3 +10,8 @@ Design requirements:
 - Use at least 4 social media / font awesome icons
 - Use at least 2 Google Fonts
 - Customized Contact Form
+
+---
+
+Eventually add:
+- [Dynamic site caps](https://grabz.it/api/javascript/)
