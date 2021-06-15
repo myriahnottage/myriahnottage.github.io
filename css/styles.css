@@ -25,15 +25,16 @@ body {
     filter: invert(1);
 }
 
-.bd {
+.z0 {
     z-index: 0;
 }
 
 .first-item {
     color: white;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 35vh;
     width: auto;
+    height: 65vh;
 }
 
 .entry {
@@ -41,11 +42,21 @@ body {
     cursor: pointer;
     width: auto;
     height: auto;
-    border-radius: 5rem;
+    border-radius: 1rem;
     padding-left: 0;
     padding-right: 0;
 }
 
+.i-wrap {
+    width: max-content;
+}
+
 .entry:hover {
     box-shadow: 2px 2px 10px 5px rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 780px) {
+    .entry {
+        width: 80vw;
+    }
 }
