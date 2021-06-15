@@ -21,6 +21,10 @@ body {
     position: fixed;
 }
 
+.wt {
+    filter: invert(1);
+}
+
 .bd {
     z-index: 0;
 }
