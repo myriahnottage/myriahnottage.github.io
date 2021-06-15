@@ -11,82 +11,59 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>Hello, world!</title>
-    <link href="css/bootstrap-css/bootstrap-grid.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap-grid.css.map" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap-grid.min.css.map" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap-reboot.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap-reboot.css.map" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap-reboot.min.css.map" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap.css.map" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-css/bootstrap.min.css.map" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-    <div class="container">
-        <!--- NAV: gonna need to include this in side scroll and compensate spacing etc -->
-        <nav class="navbar shadow-lg navbar-expand-lg fixed-top navbar-light text-dark bg-transparent">
-            <!-- md & sm nav button-->
-            <button class="navbar-toggler shadow-sm" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="container-fluid d-flex">
+        <div class="row nv-backer">
+            <nav class="navbar shadow-lg fixed-top nv">
+                <!-- md & sm nav button-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <img src="img/happyNoodle.svg" width="30" height="30" class="d-inline-block align-top">
+                </a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <div class="collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ITEMS -->
+        <div class="row bd">
+            <div class="flex-row justify-content-around"></div>
+            <div class="jumbotron col-8 mx-auto bg-transparent first-item">
+                <h1 class="display-6">happyNoodle</h1>
+                <p class="lead">home page intro</p>
+                <hr class="my-4 bg-white">
+                <p>home page text</p>
             </div>
-        </nav>
+
+            <a href="https://happynoodle510.github.io/carousel-practice/" target="_blank" class="col-8 mx-auto mb-5">
+                <img src="img/butterfly_carousel.jpeg" class="img-fluid entry">
+            </a>
+
+        </div>
     </div>
-    <!-- ITEMS -->
-    <div class="container d-flex sidescroll">
-        <div class="jumbotron bg-transparent first-item">
-            <h1 class="display-6">happyNoodle</h1>
-            <p class="lead">home page intro</p>
-            <hr class="my-4 bg-white">
-            <p>home page text</p>
-        </div>
-        <div class="jumbotron entry i1" href="#">
-            <h1 class="display-6">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        </div>
-        <div class="jumbotron entry" href="#">
-            <h1 class="display-6">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

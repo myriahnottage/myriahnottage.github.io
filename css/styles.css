@@ -3,59 +3,45 @@
 body {
     background-color: #4a4a4a;
     height: 100vh;
-    overflow: hidden;
 }
 
-.navbar {
-    border: 2px solid none;
+.nv {
+    border: none;
     border-radius: 30px;
     margin: 2%;
+    background-color: #4a4a4a;
+    z-index: 2;
+}
+.nv-backer {
+    background-color: #4a4a4a;
+    padding: 0;
+    z-index: 1;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
 }
 
-.sidescroll {
-    flex-direction: column;
-    align-items: center;
-    width: 100vh;
-    transform: rotate(-90deg) translate3d(0,-100vh,0);
-    transform-origin: right top;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0;
-    height: 100vw;
-    perspective: 1px;
-	transform-style: preserve-3d;
-    padding-bottom: 10rem;
+.bd {
+    z-index: 0;
 }
 
 .first-item {
     color: white;
     text-align: center;
     margin-top: 15vh;
-    max-width: 55vw;
-    transform: rotate(90deg);
-    transform-origin: 50% 50%;
-    transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+    width: auto;
 }
 
 .entry {
-    max-width: 55vw;
     box-shadow: 5px 5px 10px 10px rgb(0, 0, 0, .25);
     cursor: pointer;
-    transform: rotate(90deg);
-    transform-origin: 50% 50%;
-    transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
-    
+    width: auto;
+    height: auto;
+    border-radius: 5rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .entry:hover {
-        box-shadow: 2px 2px 10px 5px rgb(255, 255, 255);
-}
-
-.i1 {
-    background-image: url(/img/butterfly.jpeg);
-    background-size: cover;
-}
-
-@media screen {
-        
+    box-shadow: 2px 2px 10px 5px rgb(255, 255, 255);
 }
