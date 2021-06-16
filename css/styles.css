@@ -79,11 +79,25 @@ body {
 }
 
 .footer {
-    height: 50vh;
-    width: 100vw;
+    height: 90vh;
+    width: 80vw;
     background-color: #4a4a4a;
     z-index: 3;
 }
+
+.f-button {
+    width: 20%;
+    height: 20%;
+    align-self: flex-end;
+    /* margin-bottom: 5vh; */
+    filter: invert(1);
+    margin-left: 3.5vw;
+}
+
+/* .f-icon {
+    width: 20%;
+    height: 20%;
+} */
 
 @media only screen and (min-width: 780px) {
     .entry {
