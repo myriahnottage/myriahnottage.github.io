@@ -96,9 +96,17 @@ body {
 
 .footer {
     height: 90vh;
-    width: 80vw;
+    width: 100vw;
     background-color: #4a4a4a;
     z-index: 3;
+    padding-left: 3vw;
+}
+
+.contact-button {
+    border-radius: 35px;
+    width: 30vw;
+    background-color: lightsteelblue;
+    color: white;
 }
 
 .f-button {
