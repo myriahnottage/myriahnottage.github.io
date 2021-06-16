@@ -25,7 +25,22 @@ body {
     position: fixed;
     margin-top: 95vh;
     padding-bottom: 5vh;
+    z-index: 6;
+    /* why isn't this overlaying the shadow */
+}
+
+.bottom::before {
+    content: '';
+    width: 85vw;
+    height: 1px;
+    background-color: black;
+    filter: blur(5px);
     z-index: 5;
+    margin-bottom: 0px;
+    margin-left: 1px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    position: absolute;
 }
 
 .nv {
