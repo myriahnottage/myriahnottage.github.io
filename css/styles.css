@@ -29,7 +29,7 @@ body {
     /* why isn't this overlaying the shadow */
 }
 
-.bottom::before {
+/* .bottom::before {
     content: '';
     width: 85vw;
     height: 1px;
@@ -41,7 +41,7 @@ body {
     padding-top: 3px;
     padding-bottom: 0px;
     position: absolute;
-}
+} */
 
 .nv {
     border: none;
@@ -107,6 +107,11 @@ body {
     width: 30vw;
     background-color: lightsteelblue;
     color: white;
+}
+
+.contact-button:hover {
+    color: white;
+    box-shadow: -1px -1px 10px 7px rgb(255, 255, 255);
 }
 
 .f-button {
