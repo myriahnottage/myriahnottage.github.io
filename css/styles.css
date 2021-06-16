@@ -65,6 +65,7 @@ body {
 
 .z0 {
     z-index: 0;
+    margin-bottom: 15vh;
 }
 
 .first-item {
@@ -109,10 +110,13 @@ body {
     margin-left: 3.5vw;
 }
 
-/* .f-icon {
-    width: 20%;
-    height: 20%;
-} */
+.bi-github {
+    border-radius: 20px;
+}
+
+.f-icon:hover {
+    box-shadow: 2px 2px 10px 5px rgb(0, 0, 0, .5);
+}
 
 @media only screen and (min-width: 780px) {
     .entry {
