@@ -76,18 +76,35 @@ body {
     height: 65vh;
 }
 
+.e-page {
+    height: 100vh;
+}
+
 .entry {
     box-shadow: 5px 5px 10px 10px rgb(0, 0, 0, .25);
     cursor: pointer;
     width: auto;
-    height: auto;
+    height: max-content;
     border-radius: 1rem;
     padding-left: 0;
     padding-right: 0;
 }
 
-.i-wrap {
-    width: max-content;
+.e-wrap {
+    height: max-content;
+}
+
+.plus-wrap {
+    margin-top: -20vh;
+    height: max-content;
+}
+
+.plus {
+    color: white;
+}
+
+.plus:hover {
+    color: lightsteelblue;
 }
 
 .entry:hover {
@@ -100,6 +117,14 @@ body {
     background-color: #4a4a4a;
     z-index: 3;
     padding-left: 3vw;
+}
+
+.form-input {
+    border: none;
+}
+
+.form-input:focus {
+    border: 1px solid white;
 }
 
 .contact-button {
@@ -121,10 +146,23 @@ body {
     /* margin-bottom: 5vh; */
     filter: invert(1);
     margin-left: 3.5vw;
+    border-radius: 20px;
 }
 
-.bi-github {
-    border-radius: 20px;
+.f-button:active {
+    border: none;
+}
+
+.f-button:focus {
+    border: none;
+}
+
+.f-icon.fa-github {
+    border-radius: 30px;
+}
+
+.f-icon.fa-codepen {
+
 }
 
 .f-icon:hover {
