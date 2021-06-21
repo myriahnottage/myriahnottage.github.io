@@ -13,6 +13,11 @@
     <!-- fontawesome -->
     <link href="css/fontawesome-css/all.css" rel="stylesheet">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
     <!--- custom css -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
@@ -42,13 +47,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link MajorText" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#road-trip">Projects</a>
+                            <a class="nav-link MajorText" href="#road-trip">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link MajorText" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -60,10 +65,10 @@
         <div class="row d-flex justify-content-center home">
             <div class="col-10">
                 <div class="jumbotron text-center customJumbo custJumbLayout">
-                    <h1 class="display-6 mb-5">HappyNoodle5</h1>
-                    <p class="lead">Hi there! I'm HappyNoodle5 on GitHub, and I'm an aspiring front-end developer.</p>
+                    <h1 class="display-6 mb-5 MajorText">HappyNoodle5</h1>
+                    <p class="lead Text">Hi there! I'm HappyNoodle5 on GitHub, and I'm an aspiring front-end developer.</p>
                     <hr class="my-5">
-                    <p class="mb-5">Look through my past projects here.</p>
+                    <p class="mb-5 Text">Look through my past projects here.</p>
                     <a href="#road-trip" role="button" class="plusButton mt-5">
                         <i class="fas fa-angle-double-down fa-2x plus homePlus"></i>
                     </a>
@@ -91,13 +96,13 @@
                                 class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
                                 type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                                 aria-controls="collapseOne">
-                                About
+                                <p class="MajorText">Info</p>
                             </button>
                         </h2>
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#projOneInfo">
                         <div class="card-body projInfoContent">
-                            <p class="projInfoP">This was a learning exercise to explore parallax scrolling in addition to a practice of developing to design specs.</p>
+                            <p class="projInfoP Text">This was a learning exercise to explore parallax scrolling in addition to a practice of developing to design specs.</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +111,7 @@
                         <h2 class="mb-0">
                             <a class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
                                 type="button" href="https://github.com/happyNoodle5/parallax-practice" target="_blank">
-                                repo
+                                <p class="MajorText">repo</p>
                             </a>
                         </h2>
                     </div>
@@ -143,13 +148,13 @@
                                 class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
                                 type="button" data-toggle="collapse" data-target="#collapseP2C1" aria-expanded="false"
                                 aria-controls="collapseOne">
-                                About
+                                <p class="MajorText">About</p>
                             </button>
                         </h2>
                     </div>
                     <div id="collapseP2C1" class="collapse" aria-labelledby="headingOne" data-parent="#projTwoExample">
                         <div class="card-body projInfoContent">
-                            <p class="projInfoP">This was a learning exercise in carousels and visual story telling.</p>
+                            <p class="projInfoP Text">This was a learning exercise in carousels and visual story telling.</p>
                         </div>
                     </div>
                 </div>
@@ -158,7 +163,7 @@
                         <h2 class="mb-0">
                             <a class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
                                 type="button" href="https://github.com/happyNoodle5/carousel-practice" target="_blank">
-                                repo
+                                <p class="MajorText">repo</p>
                             </a>
                         </h2>
                     </div>
@@ -181,26 +186,26 @@
             <div class="col-8 d-flex justify-content-center foot">
                 <div class="jumbotron customJumbo">
                     <div class="row d-flex justify-content-center text-center text-uppercase mb-5">
-                        <h1 class="display-6 contact">Contact</h1>
+                        <h1 class="display-6 contact MajorText">Contact</h1>
                     </div>
                     <div class="row d-flex">
                         <form class="col d-flex flex-column">
                             <div class="form-group">
-                                <label for="formGroupExampleInput" class="text-white">Name</label>
-                                <input type="text" class="form-control form-input" id="formGroupExampleInput"
+                                <label for="formGroupExampleInput" class="text-white Text">Name</label>
+                                <input type="text" class="form-control form-input Text" id="formGroupExampleInput"
                                     placeholder="Jane Doe">
                             </div>
                             <div class="form-group">
-                                <label for="formGroupExampleInput2" class="text-white">Email</label>
-                                <input type="text" class="form-control form-input" id="formGroupExampleInput2"
+                                <label for="formGroupExampleInput2" class="text-white Text">Email</label>
+                                <input type="text" class="form-control form-input Text" id="formGroupExampleInput2"
                                     placeholder="example@gmail.com">
                             </div>
                             <div class="form-group">
-                                <label for="formGroupExampleInput2" class="text-white">Message</label>
-                                <textarea type="text" class="form-control form-input" id="formGroupExampleInput2"
+                                <label for="formGroupExampleInput2" class="text-white Text">Message</label>
+                                <textarea type="text" class="form-control form-input Text" id="formGroupExampleInput2"
                                     placeholder="Reason for message" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn contact-button">Submit</button>
+                            <button type="submit" class="btn contact-button MajorText">Submit</button>
                         </form>
 
                         <!-- SOCIALS -->

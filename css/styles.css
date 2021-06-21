@@ -74,6 +74,14 @@ body {
     border-radius: 30px;
 }
 
+.MajorText {
+    font-family: 'Major Mono Display', monospace;
+}
+
+.Text {
+    font-family: 'Nova Mono', monospace;
+}
+
 .navBacker {
     width: 100vw;
     height: 63.59px;
@@ -194,7 +202,6 @@ body {
 }
 
 .projInfoButtonLayout {
-    padding-bottom: 15px;
     padding-top: 15px;
 }
 
