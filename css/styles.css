@@ -1,10 +1,6 @@
 @charset "utf-8";
 
-body {
-    background-color: #4a4a4a;
-    height: 100vh;
-}
-
+/* bottom + right border */
 .side {
     height: 80vh;
     margin-top: 15vh;
@@ -26,86 +22,96 @@ body {
     margin-top: 95vh;
     padding-bottom: 5vh;
     z-index: 6;
-    /* why isn't this overlaying the shadow */
 }
 
-/* .bottom::before {
+.bottom::before,
+.bottom::after {
     content: '';
-    width: 85vw;
-    height: 1px;
-    background-color: black;
-    filter: blur(5px);
-    z-index: 5;
-    margin-bottom: 0px;
-    margin-left: 1px;
-    padding-top: 3px;
-    padding-bottom: 0px;
+    height: 100%;
+    background: #4a4a4a;
     position: absolute;
-} */
+}
 
-.nv {
+.bottom::before {
+    width: 6vw;
+    left: -6vw;
+}
+
+.bottom::after {
+    width: 9vw;
+    left: 100%;
+}
+
+/*  */
+/*  */
+/* SKIN */
+/*  */
+/*  */
+
+::selection {
+    background-color: white;
+    color: #4a4a4a;
+}
+
+/* content */
+
+body {
+    background: #4a4a4a;
+}
+
+.base {
+    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* nav */
+.nav {
+    background-color: #4a4a4a;
+    box-shadow: 
+        .5em .5em 1em .5em rgba(0, 0, 0, .25);
     border: none;
     border-radius: 30px;
-    margin: 2%;
-    background-color: #4a4a4a;
-    z-index: 2;
 }
-.nv-backer {
-    background-color: #4a4a4a;
-    padding: 0;
-    z-index: 1;
-    height: 10vh;
+
+.navBacker {
     width: 100vw;
+    height: 63.59px;
+    padding: 0;
+    margin: 0;
     position: fixed;
+    background: #4a4a4a;
+    z-index: 1029;
 }
 
-.wt {
-    filter: invert(1);
+.customJumbo {
+    background-color: transparent;
+    color: whitesmoke;
 }
 
-.z0 {
-    z-index: 0;
-    margin-bottom: 15vh;
-}
-
-.first-item {
-    color: white;
-    text-align: center;
-    margin-top: 35vh;
-    width: auto;
-    height: 65vh;
-}
-
-.entry {
+.projStyle {
     box-shadow: 5px 5px 10px 10px rgb(0, 0, 0, .25);
     cursor: pointer;
-    width: auto;
-    height: auto;
     border-radius: 1rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
 
-.i-wrap {
-    width: max-content;
+.projStyle:hover {
+    box-shadow: 5px 5px 10px 10px rgba(255, 255, 255, 0.75);
 }
 
-.entry:hover {
-    box-shadow: 2px 2px 10px 5px rgb(255, 255, 255);
+/* next button */
+.plus {
+    color: whitesmoke;
 }
 
-.footer {
-    height: 90vh;
-    width: 100vw;
-    background-color: #4a4a4a;
-    z-index: 3;
-    padding-left: 3vw;
+.plus:hover {
+    color: rgb(146, 180, 225);
 }
 
 .contact-button {
     border-radius: 35px;
-    width: 30vw;
-    background-color: lightsteelblue;
+    background-color: rgb(146, 180, 225);
     color: white;
 }
 
@@ -114,25 +120,73 @@ body {
     box-shadow: -1px -1px 10px 7px rgb(255, 255, 255);
 }
 
-.f-button {
-    width: 20%;
-    height: 20%;
-    align-self: flex-end;
-    /* margin-bottom: 5vh; */
-    filter: invert(1);
-    margin-left: 3.5vw;
+/*  */
+/*  */
+/* LAYOUT */
+/*  */
+/*  */
+
+.navLayout {
+    position: fixed;
+    z-index: 1030;
 }
 
-.bi-github {
-    border-radius: 20px;
+.home {
+    margin-top: 25vh;
 }
+
+.custJumbLayout {
+    margin: 0;
+    padding: 0;
+}
+
+.homePlus {
+    margin-top: 5vh;
+}
+
+.plusButton {
+    height: 32px;
+}
+
+.proj1 {
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+}
+
+/* .proj {
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+} */
+/* use above for any additional projects */
+
+.projLast {
+    margin-bottom: 10vh;
+}
+
+.lastProj {
+    margin-top: 20vh;
+}
+
+.plusProj {
+    margin-top: 21vh;
+}
+
+.foot {
+    margin-top: 8vh;
+}
+
+.contact {
+    margin-bottom: 20vh;
+    margin-top: 3vh;
+}
+
+.f-icon {
+    border-radius: 50%;
+    padding: 6%;
+}
+
 
 .f-icon:hover {
-    box-shadow: 2px 2px 10px 5px rgb(0, 0, 0, .5);
-}
-
-@media only screen and (min-width: 780px) {
-    .entry {
-        width: 80vw;
-    }
+    box-shadow: 2px 2px 10px 5px rgba(255, 255, 255, 0.5);
+    background: white;
 }
