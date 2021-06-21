@@ -125,6 +125,10 @@ body {
     background-color: whitesmoke;
 }
 
+.projInfoP {
+    background-color: transparent;
+}
+
 /* next button */
 .plus {
     color: whitesmoke;
@@ -150,6 +154,10 @@ body {
 /* LAYOUT */
 /*  */
 /*  */
+
+.baseLayout {
+    margin-left: 2vw;
+}
 
 .navLayout {
     position: fixed;
@@ -209,7 +217,7 @@ body {
 }
 
 .plusProj {
-    margin-top: 21vh;
+    margin-top: 10vh;
 }
 
 .foot {
