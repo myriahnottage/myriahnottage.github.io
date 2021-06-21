@@ -180,20 +180,6 @@ body {
     margin-top: 3vh;
 }
 
-
-
-/* MEDIA QUERIES */
-@media only screen and (max-device-width: 350px){
-    /* .socials {
-        position: static;
-    } */
-}
-
-
-/*  */
-/* OLD STUFF */
-
-
 .f-icon {
     border-radius: 50%;
     padding: 6%;
