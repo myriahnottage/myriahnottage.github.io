@@ -97,7 +97,32 @@ body {
 }
 
 .projStyle:hover {
-    box-shadow: 5px 5px 10px 10px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.75);
+}
+
+/* accordion */
+.projInfoHeader {
+    background-color: white;
+    padding: 0;
+}
+
+.projInfoHeader:hover {
+    background-color: rgb(146, 180, 225);
+}
+
+.projInfoButton {
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.projInfoButton:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.projInfoContent {
+    box-shadow: inset 3px 2px 6px rgba(0, 0, 0, .25);
+    background-color: whitesmoke;
 }
 
 /* next button */
@@ -117,7 +142,7 @@ body {
 
 .contact-button:hover {
     color: white;
-    box-shadow: -1px -1px 10px 7px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 7px rgb(255, 255, 255);
 }
 
 /*  */
@@ -152,6 +177,22 @@ body {
     margin-top: 25vh;
     margin-bottom: 15vh;
 }
+/* @media only screen and (min-device-width: ) {
+    
+} */
+
+.projInfo {
+    width: 50vw;
+}
+
+.projInfoButtonLayout {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.break {
+    height: 1px;
+}
 
 /* .proj {
     margin-top: 10vh;
@@ -185,8 +226,7 @@ body {
     padding: 6%;
 }
 
-
 .f-icon:hover {
-    box-shadow: 2px 2px 10px 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
     background: white;
 }
