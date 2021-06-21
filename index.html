@@ -26,7 +26,7 @@
     <div class="bottom"></div>
 
     <!-- CONTENT -->
-    <div class="container-fluid base">
+    <div class="container-fluid base baseLayout">
 
         <!-- NAV -->
         <div class="row d-flex justify-content-center navBacker">
@@ -80,7 +80,42 @@
                     <img src="img/roadtrip.png" class="img-fluid col-10 projStyle">
                 </a>
             </div>
-            <div class="w-100"></div>
+            <div class="w-100 break"></div>
+
+            <!-- PROJ INFO -->
+            <div class="accordion mt-5 projInfo" id="projOneInfo">
+                <div class="card">
+                    <div class="card-header projInfoHeader" id="headingOne">
+                        <h2 class="mb-0">
+                            <button
+                                class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
+                                type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                About
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#projOneInfo">
+                        <div class="card-body projInfoContent">
+                            <p class="projInfoP">This was a learning exercise to explore parallax scrolling in addition to a practice of developing to design specs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header projInfoHeader" id="headingOne">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
+                                type="button" href="https://github.com/happyNoodle5/parallax-practice" target="_blank">
+                                repo
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 break"></div>
+
+            <!-- NEXT BUTTON -->
             <div class="col-1 d-flex justify-content-center">
                 <a href="#butterfly-story" role="button" class="plusButton plusProj">
                     <i class="fas fa-angle-double-down fa-2x plus"></i>
@@ -97,7 +132,42 @@
                     <img src="img/butterfly_carousel.jpeg" class="img-fluid col-10 projStyle">
                 </a>
             </div>
-            <div class="w-100"></div>
+            <div class="w-100 break"></div>
+
+            <!-- PROJ INFO -->
+            <div class="accordion mt-5 projInfo" id="projTwoExample">
+                <div class="card">
+                    <div class="card-header projInfoHeader" id="headingOne">
+                        <h2 class="mb-0">
+                            <button
+                                class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
+                                type="button" data-toggle="collapse" data-target="#collapseP2C1" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                About
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseP2C1" class="collapse" aria-labelledby="headingOne" data-parent="#projTwoExample">
+                        <div class="card-body projInfoContent">
+                            <p class="projInfoP">This was a learning exercise in carousels and visual story telling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header projInfoHeader" id="headingOne">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
+                                type="button" href="https://github.com/happyNoodle5/carousel-practice" target="_blank">
+                                repo
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 break"></div>
+
+            <!-- NEXT BUTTON -->
             <div class="col-1 d-flex justify-content-center">
                 <a href="#contact" role="button" class="plusButton plusProj">
                     <i class="fas fa-angle-double-down fa-2x plus"></i>
@@ -135,7 +205,7 @@
 
                         <!-- SOCIALS -->
                         <div class="col-2 d-flex">
-                            <div class="row d-flex flex-column">
+                            <div class="row d-flex flex-column align-items-center">
                                 <div class="col-md-2 col-xs- github">
                                     <a type="button" class="btn fButton" href="https://github.com/happyNoodle5"
                                         target="_blank">
