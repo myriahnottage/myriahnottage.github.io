@@ -1,7 +1,7 @@
 # happynoodle510.github.io
 
 to do:
-- accordion, fonts, larger screen responsive
+- fonts, larger screen responsive
 
 [visit](https://happynoodle5.github.io/)
 
@@ -10,7 +10,7 @@ to do:
 First pass design requirements:
 - ~~Nav/Navbar~~
 - ~~**Jumbotron** or Carousel~~
-- Accordion or thumbnails
+- ~~Accordion or thumbnails~~
 - Self-written content / No lorem ipsum!
 - ~~Must include a link to at least 1 site you've created~~
 - ~~Use at least 4 social media / font awesome icons~~
