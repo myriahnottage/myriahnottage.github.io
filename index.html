@@ -11,7 +11,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- fontawesome -->
-    <link href="css/fa-css/all.css" rel="stylesheet">
+    <link href="css/fontawesome-css/all.css" rel="stylesheet">
 
     <!--- custom css -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -21,109 +21,149 @@
 </head>
 
 <body>
-
-    <!--- viewport l + b border -->
+    <!--  viewport l + b border -->
     <div class="side"></div>
     <div class="bottom"></div>
 
-    <div class="container-fluid">
-        <div class="nv-backer">
-            <nav class="navbar navbar-expand shadow-lg fixed-top nv d-flex justify-content-between">
+    <!-- CONTENT -->
+    <div class="container-fluid base">
 
-                <div id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" href="#">
-                                <img src="img/hamburger_icon.svg" class="ml-3 wt"></img>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+        <!-- NAV -->
+        <div class="row d-flex justify-content-center navBacker">
+            <nav class="navbar navbar-dark col-10 mt-2 nav navLayout">
+                <button class="navbar-toggler ml-3" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-3" href="#home">
+                    <img src="img/happyNoodle.svg" width="30" height="30" alt="happyNoodle logo" loading="lazy">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#road-trip">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-
-                <a class="navbar-brand" href="#">
-                    <img src="img/happyNoodle.svg" width="30" height="30" class="d-inline-block align-top">
-                </a>
             </nav>
         </div>
 
-        <!-- ITEMS -->
-        <div class="row z0">
-            <div class="jumbotron mx-auto bg-transparent first-item">
-                <h1 class="display-6">happyNoodle5</h1>
-                <p class="lead">home page intro</p>
-                <hr class="my-4 bg-white">
-                <p>home page text</p>
-                <a href="#road-trip" role="button" class="mb-5">
-                    <i class="fas fa-angle-double-down plus"></i>
-                </a>
+        <!-- HOME -->
+        <a id="home"></a>
+        <div class="row d-flex justify-content-center home">
+            <div class="col-10">
+                <div class="jumbotron text-center customJumbo custJumbLayout">
+                    <h1 class="display-6 mb-5">HappyNoodle5</h1>
+                    <p class="lead">Hi there! I'm HappyNoodle5 on GitHub, and I'm an aspiring front-end developer.</p>
+                    <hr class="my-5">
+                    <p class="mb-5">Look through my past projects here.</p>
+                    <a href="#road-trip" role="button" class="plusButton mt-5">
+                        <i class="fas fa-angle-double-down fa-2x plus homePlus"></i>
+                    </a>
+                </div>
             </div>
-
-            <div class="row justify-content-center e-page">
-                <a id="road-trip"></a>
-                <a href="https://happynoodle5.github.io/parallax-practice/" target="_blank"
-                    class="my-5 mb-5 d-flex justify-content-center e-wrap">
-                    <img src="img/roadtrip.png" class="img-fluid col-8 entry">
-                </a>
-
-                <a href="#butterfly-story" role="button" class="plus-wrap">
-                    <i class="fas fa-angle-double-down plus"></i>
-                </a>
-            </div>
-
-            <div class="row justify-content-center e-page">
-                <a id="butterfly-story"></a>
-            <a href="https://happynoodle5.github.io/carousel-practice/" target="_blank"
-                class="mb-5 mx-auto d-flex justify-content-center">
-                <img src="img/butterfly_carousel.jpeg" class="img-fluid col-8 entry">
-            </a>
-            </div>
-
         </div>
 
-        <!-- FOOTER -->
-        <div class="row footer justify-content-center">
-            <h1 class="display-5 mt-3 text-uppercase text-white">contact</h1>
+        <!-- PROJ -->
+        <a id="road-trip"></a>
+        <div class="row d-flex justify-content-center proj1">
+            <div class="col-10">
+                <a href="https://happynoodle5.github.io/parallax-practice/" target="_blank"
+                    class="d-flex justify-content-center">
+                    <img src="img/roadtrip.png" class="img-fluid col-10 projStyle">
+                </a>
+            </div>
             <div class="w-100"></div>
-            <form class="col-10">
-                <div class="form-group">
-                    <label for="formGroupExampleInput" class="text-white">Name</label>
-                    <input type="text" class="form-control form-input" id="formGroupExampleInput"
-                        placeholder="Jane Doe">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2" class="text-white">Email</label>
-                    <input type="text" class="form-control form-input" id="formGroupExampleInput2"
-                        placeholder="example@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2" class="text-white">Message</label>
-                    <textarea type="text" class="form-control form-input" id="formGroupExampleInput2"
-                        placeholder="Reason for message" rows="3"></textarea>
-                </div>
-            </form>
-            <button type="button" class="btn btn-lg contact-button">Submit</button>
+            <div class="col-1 d-flex justify-content-center">
+                <a href="#butterfly-story" role="button" class="plusButton plusProj">
+                    <i class="fas fa-angle-double-down fa-2x plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- PROJ -->
+        <a id="butterfly-story"></a>
+        <div class="row d-flex justify-content-center projLast">
+            <div class="col-10">
+                <a href="https://happynoodle5.github.io/carousel-practice/" target="_blank"
+                    class="d-flex justify-content-center lastProj">
+                    <img src="img/butterfly_carousel.jpeg" class="img-fluid col-10 projStyle">
+                </a>
+            </div>
             <div class="w-100"></div>
-            <div class="justify-content-left mb-2 w-100">
-                <a type="button" class="btn f-button" href="https://github.com/happyNoodle5" target="_blank">
-                    <i class="fab fa-github fa-3x f-icon"></i>
+            <div class="col-1 d-flex justify-content-center">
+                <a href="#contact" role="button" class="plusButton plusProj">
+                    <i class="fas fa-angle-double-down fa-2x plus"></i>
                 </a>
-                <a type="button" class="btn f-button" href="https://www.linkedin.com/in/myriahnottage" target="_blank">
-                    <i class="fab fa-linkedin fa-3x f-icon"></i>
-                </a>
-                <a type="button" class="btn f-button" href="https://codepen.io/hella_saurus" target="_blank">
-                    <i class="fab fa-codepen fa-3x f-icon"></i>
-                </a>
+            </div>
+        </div>
+
+        <!-- FOOT -->
+        <div class="row d-flex justify-content-center">
+            <a id="contact"></a>
+            <div class="col-8 d-flex justify-content-center foot">
+                <div class="jumbotron customJumbo">
+                    <div class="row d-flex justify-content-center text-center text-uppercase mb-5">
+                        <h1 class="display-6 contact">Contact</h1>
+                    </div>
+                    <div class="row d-flex">
+                        <form class="col d-flex flex-column mb-5">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput" class="text-white">Name</label>
+                                <input type="text" class="form-control form-input" id="formGroupExampleInput"
+                                    placeholder="Jane Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2" class="text-white">Email</label>
+                                <input type="text" class="form-control form-input" id="formGroupExampleInput2"
+                                    placeholder="example@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2" class="text-white">Message</label>
+                                <textarea type="text" class="form-control form-input" id="formGroupExampleInput2"
+                                    placeholder="Reason for message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn contact-button">Submit</button>
+                        </form>
+
+                        <!-- SOCIALS -->
+                        <div class="col-2 d-flex mb-5">
+                            <div class="row d-flex flex-column">
+                                <div class="col-md-2 col-xs- github">
+                                    <a type="button" class="btn fButton" href="https://github.com/happyNoodle5"
+                                        target="_blank">
+                                        <i class="fab fa-github fa-3x f-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 linkedin">
+                                    <a type="button" class="btn fButton"
+                                        href="https://www.linkedin.com/in/myriahnottage" target="_blank">
+                                        <i class="fab fa-linkedin fa-3x f-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 d-flex codepen">
+                                    <a type="button" class="btn fButton" href="https://codepen.io/hella_saurus"
+                                        target="_blank">
+                                        <i class="fab fa-codepen fa-3x f-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+
+    <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
