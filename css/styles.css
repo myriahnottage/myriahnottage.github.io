@@ -1,11 +1,16 @@
 @charset "utf-8";
 
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
 /* bottom + right border */
 .side {
-    height: 80vh;
+    height: 81vh;
     margin-top: 15vh;
-    margin-bottom: 10vh;
-    margin-left: 6vw;
+    margin-bottom: 9vh;
+    margin-left: 4vw;
     border-right: 1px solid white;
     background-color: #4a4a4a;
     position: fixed;
@@ -13,14 +18,15 @@
 }
 
 .bottom {
-    width: 85vw;
-    margin-left: 6vw;
+    width: 91vw;
+    height: 4vh;
+    margin-left: 4vw;
     padding-right: 5vw;
     border-top: 1px solid white;
     background-color: #4a4a4a;
     position: fixed;
-    margin-top: 95vh;
-    padding-bottom: 5vh;
+    margin-top: 96vh;
+    padding-bottom: 4vh;
     z-index: 6;
 }
 
@@ -38,8 +44,8 @@
 }
 
 .bottom::after {
-    width: 9vw;
-    left: 100%;
+    width: 10vw;
+    left: 99%;
 }
 
 /*  */
@@ -57,12 +63,6 @@
 
 body {
     background: #4a4a4a;
-}
-
-.base {
-    height: 100vh;
-    padding: 0;
-    overflow-x: hidden;
 }
 
 /* nav */
@@ -157,14 +157,42 @@ body {
     box-shadow: 0px 0px 10px 7px rgb(255, 255, 255);
 }
 
+.f-icon:hover {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
+    background: white;
+}
+
+.credits {
+    font-size: 10px;
+    color: #4a4a4a;
+    position: relative;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.myCredits::before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 45%;
+    background-color: rgb(146, 180, 225);
+    z-index: -1;
+}
+
+.credits a {
+    color: #4a4a4a;
+}
+
 /*  */
 /*  */
 /* LAYOUT */
 /*  */
 /*  */
 
-.baseLayout {
-    margin-left: 2vw;
+.base {
+    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .navLayout {
@@ -173,24 +201,34 @@ body {
 }
 
 .home {
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 .custJumbLayout {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.intro {
+    margin-left: -6vw;
 }
 
 .homePlus {
     margin-top: 5vh;
 }
 
+.lineSpace {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 .plusButton {
     height: 32px;
+    margin-top: 3vh;
 }
 
 .proj1 {
-    margin-top: 25vh;
+    margin-top: 20vh;
     margin-bottom: 15vh;
 }
 /* @media only screen and (min-device-width: ) {
@@ -216,7 +254,8 @@ body {
 /* use above for any additional projects */
 
 .projLast {
-    margin-bottom: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
 }
 
 .lastProj {
@@ -228,20 +267,23 @@ body {
 }
 
 .foot {
-    margin-top: 8vh;
+    margin-top: 4vh;
+    max-height: 90vh;
+    margin-bottom: 2vh;
 }
 
 .contact {
-    margin-bottom: 20vh;
-    margin-top: 3vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.creditWrap {
+    background-color: whitesmoke;
+    height: 15vh;
+    padding-top: 2vh;
 }
 
 .f-icon {
     border-radius: 50%;
     padding: 6%;
-}
-
-.f-icon:hover {
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
-    background: white;
 }
