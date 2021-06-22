@@ -293,14 +293,17 @@ body {
 /*  */
 
 @media only screen 
+    and (min-device-width: 360px) {
+        .intro {
+            margin-left: 0;
+        }
+    }
+
+@media only screen 
     and (min-device-width: 420px) {
     
         .home {
             margin-top: 20vh;
-        }
-        
-        .intro {
-            margin-left: 0;
         }
 
         .lineSpace {
@@ -310,14 +313,25 @@ body {
 }
 
 @media only screen
-    and (min-device-width: 745px) {
+    and (min-device-width:578px) {
+        .foot {
+            margin-bottom: 0;
+        }
+}
+
+@media only screen
+    and (min-device-width:670px) {
+        .projLast {
+            margin-top: 15vh;
+        }
+
         .proj1 {
             margin-top: 16vh;
         }
+}
 
-        .lastProj {
-            margin-top: 12vh;
-        }
+@media only screen
+    and (min-device-width: 745px) {
 
         .foot {
             margin-bottom: 10vh;
@@ -326,28 +340,45 @@ body {
 }
 
 @media only screen
-    and (min-device-width: 901px) {
+    and (min-device-width: 791px) {
         .plusProj {
             margin-top: 2vh;
         }
 }
 
 @media only screen
-    and (min-device-width: 1066px) {
-        .projStyle {
-            max-width: 737px;
+    and (min-device-width: 942px) {
+        
+        .projInfo {
+            margin-top: 1rem!important;
         }
 
-        .projInfo {
-            margin-top: 2rem!important;
+        .lastProj {
+            margin-top: 15vh;
+        }
+}
+
+@media only screen
+    and (min-device-width: 1031px) {
+        .proj1 {
+            margin-top: 13vh;
         }
 }
 
 @media only screen 
-    and (min-device-width: 1280px) {
+    and (min-device-width: 1133) {
         
-        .projInfo {
-            margin-top: 12vh;
+        .home {
+            margin-top: 21vh;
+            margin-bottom: 15vh;
+        }
+}
+
+@media only screen
+    and (min-device-width: 1066px) {
+        
+        .projStyle {
+            max-width: 737px;
         }
 }
 
