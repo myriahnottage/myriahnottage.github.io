@@ -5,6 +5,10 @@
     width: extend-to-zoom;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 /* bottom + right border */
 .side {
     height: 81vh;
