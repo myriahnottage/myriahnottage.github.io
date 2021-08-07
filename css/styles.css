@@ -18,7 +18,18 @@
     border-right: 1px solid white;
     background-color: #4a4a4a;
     position: fixed;
-    z-index: 4;
+    z-index: 15;
+}
+
+.side::before {
+/* .side::after { */
+    content: '';
+    height: 101%;
+    width: 4.1vw;
+    right: -.1vw;
+    background: #4a4a4a;
+    position: absolute;
+    z-index: 2;
 }
 
 .bottom {
@@ -83,7 +94,8 @@ body {
 }
 
 .Text {
-    font-family: 'Nova Mono', monospace;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
 }
 
 .navBacker {
@@ -150,6 +162,10 @@ body {
     color: rgb(146, 180, 225);
 }
 
+.contactHeader {
+    color: whitesmoke;
+}
+
 .contact-button {
     border-radius: 35px;
     background-color: rgb(146, 180, 225);
@@ -162,25 +178,32 @@ body {
 }
 
 .f-icon:hover {
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
-    background: white;
+    box-shadow: 0px 0px 10px 10px rgba(146, 180, 225, 0.5);
+    background: rgb(146, 180, 225);
 }
 
 .credits {
-    font-size: 10px;
+    font-size: .7em;
     color: #4a4a4a;
     position: relative;
-    margin-bottom: 0;
-    z-index: 1;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.myCredits {
+    font-size: 2em;
+    z-index: 5;
 }
 
 .myCredits::before {
     content: '';
     position: absolute;
-    height: 10px;
-    width: 45%;
+    height: 15px;
+    width: 194px;
     background-color: rgb(146, 180, 225);
     z-index: -1;
+    top: 4vh;
 }
 
 .credits a {
@@ -237,7 +260,7 @@ body {
 }
 
 .projInfo {
-    width: 50vw;
+    width: 66vw;
     margin-top: 3rem!important;
 }
 
@@ -275,14 +298,22 @@ body {
 }
 
 .contact {
-    margin-bottom: 5vh;
-    margin-top: 5vh;
+    margin-bottom: 15vh;
+    margin-top: 30vh;
 }
 
 .creditWrap {
     background-color: whitesmoke;
-    height: 15vh;
-    padding-top: 2vh;
+    height: 16vh;
+    width: 91vw;
+    right: .6vw;
+    position: relative;
+    z-index: 1;
+    left: 7.2vw;
+}
+
+.endCredits {
+    margin-bottom: 3vh;
 }
 
 .f-icon {

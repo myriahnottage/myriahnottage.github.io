@@ -18,8 +18,11 @@
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 
     <!--- custom css -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -53,7 +56,7 @@
                             <a class="nav-link MajorText" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link MajorText" href="#road-trip">Projects</a>
+                            <a class="nav-link MajorText" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link MajorText" href="#contact">Contact</a>
@@ -68,12 +71,12 @@
         <div class="row d-flex justify-content-center home">
             <div class="col-10">
                 <div class="jumbotron text-center customJumbo">
-                    <h2 class="display-6 mb-5 MajorText intro">HappyNoodle5</h1>
+                    <h1 class="display-5 mb-5 MajorText intro">HappyNoodle5</h1>
                         <p class="lead Text">Hi there! I'm HappyNoodle5 on GitHub, and I'm an aspiring front-end
                             developer.</p>
                         <hr class="lineSpace">
                         <p class="mb-5 Text">Look through my past projects here.</p>
-                        <a href="#road-trip" role="button" class="plusButton">
+                        <a href="#projects" role="button" class="plusButton">
                             <i class="fas fa-angle-double-down fa-2x plus homePlus"></i>
                         </a>
                 </div>
@@ -81,7 +84,7 @@
         </div>
 
         <!-- PROJ -->
-        <a id="road-trip"></a>
+        <a id="projects"></a>
         <div class="row d-flex justify-content-center proj1">
             <div class="col-10">
                 <a href="https://happynoodle5.github.io/parallax-practice/" target="_blank"
@@ -116,7 +119,7 @@
                         <h2 class="mb-0">
                             <a class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
                                 type="button" href="https://github.com/happyNoodle5/parallax-practice" target="_blank">
-                                <p class="MajorText">repo</p>
+                                <p class="MajorText">repo <i class="fas fa-external-link-alt"></i></p>
                             </a>
                         </h2>
                     </div>
@@ -167,9 +170,8 @@
                 <div class="card">
                     <div class="card-header projInfoHeader" id="headingOne">
                         <h2 class="mb-0">
-                            <a class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout"
-                                type="button" href="https://github.com/happyNoodle5/carousel-practice" target="_blank">
-                                <p class="MajorText">repo</p>
+                            <a class="btn btn-link btn-block text-center text-uppercase projInfoButton projInfoButtonLayout" type="button" href="https://github.com/happyNoodle5/carousel-practice" target="_blank">
+                                <p class="MajorText">repo <i class="fas fa-external-link-alt"></i></p>
                             </a>
                         </h2>
                     </div>
@@ -189,65 +191,33 @@
         <!-- FOOT -->
         <div class="row d-flex justify-content-center">
             <a id="contact"></a>
-            <div class="col-8 d-flex justify-content-center foot">
-                <div class="jumbotron customJumbo customJumboLayout">
-                    <div class="row d-flex justify-content-center text-center text-uppercase">
-                        <h1 class="display-6 contact MajorText">Contact</h1>
-                    </div>
-                    <div class="row d-flex">
-                        <form class="col d-flex flex-column">
-                            <div class="form-group">
-                                <label for="formGroupExampleInput" class="text-white Text">Name</label>
-                                <input type="text" class="form-control form-input Text" id="formGroupExampleInput"
-                                    placeholder="Jane Doe">
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2" class="text-white Text">Email</label>
-                                <input type="text" class="form-control form-input Text" id="formGroupExampleInput2"
-                                    placeholder="example@gmail.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput2" class="text-white Text">Message</label>
-                                <textarea type="text" class="form-control form-input Text" id="formGroupExampleInput2"
-                                    placeholder="Reason for message" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn contact-button MajorText">Submit</button>
-                        </form>
-
-                        <!-- SOCIALS -->
-                        <div class="col-2 d-flex">
-                            <div class="row d-flex flex-column align-items-center">
-                                <div class="col-md-2 col-xs- github">
-                                    <a type="button" class="btn fButton" href="https://github.com/happyNoodle5"
-                                        target="_blank">
-                                        <i class="fab fa-github fa-3x f-icon"></i>
-                                    </a>
-                                </div>
-                                <div class="col-md-2 linkedin">
-                                    <a type="button" class="btn fButton"
-                                        href="https://www.linkedin.com/in/myriahnottage" target="_blank">
-                                        <i class="fab fa-linkedin fa-3x f-icon"></i>
-                                    </a>
-                                </div>
-                                <div class="col-md-2 d-flex codepen">
-                                    <a type="button" class="btn fButton" href="https://codepen.io/hella_saurus"
-                                        target="_blank">
-                                        <i class="fab fa-codepen fa-3x f-icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 class="display-6 contact contactHeader MajorText">Contact</h1>
         </div>
 
         <!-- CREDITS -->
-        <div class="row d-flex justify-content-center">
-            <div class="col-10 text-center creditWrap">
+        <div class="row d-flex flex-column">
+            <div class="col-11 text-center creditWrap">
                 <p class="Text credits myCredits">made by <a href="https://github.com/happyNoodle5">happyNoodle5</a></p>
-                <br>
-                <p class="Text">
+                <div class="col-md-2 github">
+                    <a type="button" class="btn fButton" href="https://github.com/happyNoodle5"
+                        target="_blank">
+                        <i class="fab fa-github fa-3x f-icon"></i>
+                    </a>
+                </div>
+                <div class="col-md-2 linkedin">
+                    <a type="button" class="btn fButton"
+                        href="https://www.linkedin.com/in/myriahnottage" target="_blank">
+                        <i class="fab fa-linkedin fa-3x f-icon"></i>
+                    </a>
+                </div>
+                <div class="col-md-2 codepen">
+                    <a type="button" class="btn fButton" href="https://codepen.io/hella_saurus"
+                        target="_blank">
+                        <i class="fab fa-codepen fa-3x f-icon"></i>
+                    </a>
+                </div>
+                <br class="break">
+                <p class="Text endCredits">
                     <a class="credits" href="https://fontawesome.com/v5.15/icons">fontawesome icons</a> <a class="credits" href="https://fonts.google.com/">google fonts</a> <a class="credits" href="https://unsplash.com/">unsplash images</a>
                 </p>
             </div>
