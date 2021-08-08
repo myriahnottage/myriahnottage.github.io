@@ -151,6 +151,7 @@ body {
 
 .projInfoP {
     background-color: transparent;
+    font-size: 1.5em;
 }
 
 /* next button */
@@ -254,9 +255,14 @@ body {
     margin-top: 3vh;
 }
 
+.proj {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
 .proj1 {
-    margin-top: 20vh;
-    margin-bottom: 15vh;
+    margin-top: 15vh;
+    margin-bottom: 0vh;
 }
 
 .projInfo {
@@ -279,16 +285,16 @@ body {
 /* use above for any additional projects */
 
 .projLast {
-    margin-top: 20vh;
-    margin-bottom: 5vh;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
 }
 
 .lastProj {
-    margin-top: 20vh;
+    margin-top: 0vh;
 }
 
 .plusProj {
-    margin-top: 10vh;
+    padding-top: 10vh;
 }
 
 .foot {
@@ -357,11 +363,15 @@ body {
 @media only screen
     and (min-device-width:670px) {
         .projLast {
-            margin-top: 15vh;
+            margin-top: 5vh;
         }
 
         .proj1 {
-            margin-top: 16vh;
+            padding-top: 10vh;
+        }
+
+        .proj {
+            margin-top: 8vh;
         }
 }
 
@@ -396,7 +406,7 @@ body {
 @media only screen
     and (min-device-width: 1031px) {
         .proj1 {
-            margin-top: 13vh;
+            margin-top: 5vh;
         }
 }
 
