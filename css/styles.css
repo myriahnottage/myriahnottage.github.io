@@ -89,11 +89,18 @@ hr {
 .projects {
     padding-top: 3rem;
     margin-inline: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects
 article {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+}
+
+article
+p {
+    max-width: 427px;
 }
 
 img {
@@ -103,14 +110,23 @@ img {
     margin-inline: auto
 }
 
-/* fix how project images are set up so they can scale on hover: https://css-tricks.com/zooming-background-images/ */
-/* .project-link:hover .project-image {
-    transform: scale(1.2);
+
+.project-link:hover .project-image,
+.project-link:focus .project-image {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 20px var(--primary-light-color);
+}
+
+.project-link {
+    width: 434px;
+    height: 249.933;
 }
 
 .project-image {
+   width: 95%;
+   height: 95%;
    transition: all .5s; 
-} */
+}
 
 
 .repo-button {
@@ -138,4 +154,39 @@ i {
 .credit-wrap {
     display: flex;
     margin-top: 1rem;
+}
+
+.social-link:hover .social-image,
+.social-link:focus .social-image {
+    filter: drop-shadow(2px 2px 5px whitesmoke);
+}
+
+@media (min-width: 434px) {
+    .project-image {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1036px) {
+    .projects {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .projects
+    article {
+        margin-bottom: 0;
+    }
+
+    .project-image,
+    .project-link {
+        height: 50%;
+    }
+
+    article
+    p {
+        margin-inline: auto;
+    }
 }
