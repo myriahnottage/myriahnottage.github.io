@@ -10,6 +10,21 @@
 }
 
 /* bottom + right border */
+
+.spacer {
+    aspect-ratio: 450/900;
+    height: 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+}
+
+.layer1 {
+    background-image: url('../img/layered-waves-haikei.svg');
+}
+
 .side {
     height: 81vh;
     margin-top: 15vh;
@@ -98,16 +113,6 @@ body {
     font-size: 2em;
 }
 
-.navBacker {
-    width: 100vw;
-    height: 63.59px;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    background: #4a4a4a;
-    z-index: 1029;
-}
-
 .customJumbo {
     background-color: transparent;
     color: whitesmoke;
@@ -165,6 +170,7 @@ body {
 
 .contactHeader {
     color: whitesmoke;
+    z-index: 10;
 }
 
 .contact-button {
@@ -203,7 +209,7 @@ body {
     height: 15px;
     width: 194px;
     background-color: rgb(146, 180, 225);
-    z-index: -1;
+    z-index: 1;
     top: 4vh;
 }
 
@@ -225,11 +231,13 @@ body {
 
 .navLayout {
     position: fixed;
+    margin-top: 0;
     z-index: 1030;
 }
 
 .home {
     margin-top: 15vh;
+    z-index: 10;
 }
 
 .custJumbLayout {
@@ -258,16 +266,19 @@ body {
 .proj {
     margin-top: 0vh;
     margin-bottom: 0vh;
+    z-index: 10;
 }
 
 .proj1 {
     margin-top: 15vh;
     margin-bottom: 0vh;
+    z-index: 10;
 }
 
 .projInfo {
     width: 66vw;
     margin-top: 3rem!important;
+    z-index: 10;
 }
 
 .projInfoButtonLayout {
@@ -287,6 +298,7 @@ body {
 .projLast {
     margin-top: 0vh;
     margin-bottom: 2vh;
+    z-index: 10;
 }
 
 .lastProj {
@@ -311,11 +323,11 @@ body {
 .creditWrap {
     background-color: whitesmoke;
     height: 16vh;
-    width: 91vw;
-    right: .6vw;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    z-index: 1;
-    left: 7.2vw;
+    z-index: 10;
 }
 
 .endCredits {
@@ -388,6 +400,19 @@ body {
     and (min-device-width: 791px) {
         .plusProj {
             margin-top: 2vh;
+        }
+}
+
+@media only screen
+    and (min-device-width: 932px) {
+        
+        .lead,
+        .MajorText {
+            text-shadow: 2px 2px #4a4a4a;
+        }
+
+        .Text {
+            text-shadow: 2px 2px #4a4a4a;
         }
 }
 
