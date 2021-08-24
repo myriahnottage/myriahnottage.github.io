@@ -404,9 +404,8 @@ body {
 }
 
 @media only screen
-    and (min-device-width: 932px) {
+    and (max-device-width: 932px) {
         
-        .lead,
         .MajorText {
             text-shadow: 2px 2px #4a4a4a;
         }
