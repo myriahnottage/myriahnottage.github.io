@@ -3,3 +3,31 @@
     margin-bottom: 1rem;
     width: 100%;
 }
+
+.current-post {
+    max-width: 85%;
+    text-align: left;
+}
+
+.blog-title {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.blog-title-underline {
+    margin-bottom: 1rem;
+    margin-inline: unset;
+    margin-left: 1.5%;
+}
+
+.blog-text {
+    padding-bottom: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10%;
+}
