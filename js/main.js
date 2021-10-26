@@ -1,8 +1,5 @@
-const tween = KUTE.fromTo(
-    '#blob1',
-    { path: '#blob1' },
-    { path: '#blob2' },
-    { repeat: 999, duration: 3000, yoyo: true }
-)
-
-tween.start()
+function toggleMenuSelector() {
+    const menuSelector = document.getElementsByClassName('navToggleLabel')[0];
+    // console.log(menuSelector);
+    menuSelector.classList.toggle("change");
+  };
