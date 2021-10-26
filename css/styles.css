@@ -156,6 +156,7 @@ nav a:hover {
     overflow: scroll;
     top: 110px;
     height: calc(100vh - 110px);
+    width: 100vw;
     background-color: var(--primary-color);
     color: var(--primary-neutral-color);
     padding-left: 8vw;
