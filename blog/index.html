@@ -20,24 +20,29 @@
     <!--- custom css -->
     <link href="../css/styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/blog.css" type="text/css">
+
+    <!-- JS -->
+    <script src="../js/main.js" defer></script>
     
-    <title>The Blog</title>
+    <title>Sea Hag Blog</title>
 </head>
 <body>
-    <div class="spacer layer1"></div>
+    <header>
+        <label for="navToggle" class="navToggleLabel" onclick="toggleMenuSelector()">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </label>
+        <a class="logoAnchor" href="/"><img src="../img/seahagcafe.png" alt="Sea Hag Cafe Logo" href="/" class="logo"></a>
+        <input type="checkbox" id="navToggle" class="navToggle">
+        <nav>
+          <ul>
+            <li><a href="/blog" onclick="toggleMenuSelector()">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+          </ul>
+        </nav>
+    </header>
     <div class="content">
-        <section class="section-buttons">
-            <a href="../"class="blobs project-blob">
-                <h3>projects</h3>
-            </a>
-            <a class="blobs blog-blob active">
-                <h3>blog</h3>
-            </a>
-        </section>
-        <header class="intro">
-            <h1>The blog</h1>
-            <hr>
-        </header>
         <section class="current-post">
             <h2 class="blog-title">"then leave"</h2>
             <hr class="blog-title-underline">
@@ -47,10 +52,10 @@
                 <br>
                 <span class="list">
                 <p class="blog-text">
-                    <b>1.</b> I could actually afford to buy a house on a generous $27/hour wage, which would only ever afford rent at home
-                    </p>
-                    <p class="blog-text">
-                    <b>2.</b> I have family there who I grew up visiting every summer
+                    <ol>
+                        <li>I could actually afford to buy a house on a generous $27/hour wage, which would only ever afford rent at home</li>
+                        <li>I have family there who I grew up visiting every summer</li>
+                    </ol>
                 </p>
             </span>
             <br>

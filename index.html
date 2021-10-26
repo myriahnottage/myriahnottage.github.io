@@ -16,73 +16,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> 
 
     <!--- custom css -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+
     <title>happyNoodle5 portfolio</title>
   </head>
   <body>
-      <div class="spacer layer1"></div>
-      <div class="content">
-        <section class="section-buttons">
-            <a href="/"class="blobs project-blob active">
-                <h3>projects</h3>
-            </a>
-            <a href="/blog/" class="blobs blog-blob">
-                <h3>blog</h3>
-            </a>
-        </section>
-        <header class="intro">
-            <h1>Myriah Nottage</h1>
-            <p>I'm Myriah, and I'm an aspiring, self-taught coder.</p>
-            <p>Look through my personal projects, and find me in other corners of the internet.</p>
-            <hr>
-        </header>
-        <section class="projects">
-            <article>
-                <h2>Magic 8 Ball</h2>
-                <a href="https://myriahnottage.github.io/magic8ball/" target="_blank" class="project-link">
-                    <img class="project-image" src="/img/magic8ball.png" alt="snapshot of a JS magic 8 ball project">
-                </a>
-                <p>I created a magic 8 ball as a practice in JavaScript.</p>
-                <footer>
-                    <a class="repo-button" href="https://myriahnottage.github.io/magic8ball/" target="_blank">repo <i class="fas fa-external-link-square-alt"></i>
-                    </a>
-                </footer>
-            </article>
-            <article>
-                <h2>Parallax</h2>
-                <a href="https://myriahnottage.github.io/parallax-practice/" target="_blank" class="project-link">
-                    <img class="project-image" src="/img/roadtrip.png" alt="snapshot of a photo album using the parallax effect">
-                </a>
-                <p>This was a learning exercise to explore parallax scrolling in addition to a practice of developing to design specs.</p>
-                <footer>
-                    <a class="repo-button" href="https://myriahnottage.github.io/parallax-practice/" target="_blank">repo <i class="fas fa-external-link-square-alt"></i></a>
-                </footer>
-            </article>
-        </section>
-        <footer class="footer">
-            <hr>
-            <p class="made-by">Made by Myriah Nottage</p>
-            <a href="https://github.com/myriahnottage" type="button" target="_blank" class="social-link">
-                <i class="fab fa-github fa-3x social-image"></i>
-            </a>
-            <a href="https://codepen.io/hella_saurus" type="button" target="_blank" class="social-link">
-                <i class="fab fa-codepen fa-3x social-image"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/myriahnottage" type="button" target="_blank" class="social-link">
-                <i class="fab fa-linkedin fa-3x social-image" aria-hidden="true"></i>
-            </a>
-            <div class="credit-wrap">
-                <a class="credits" href="https://fontawesome.com/v5.15/icons" target="_blank">fontawesome</a>
-                <a class="credits" href="https://fonts.google.com/" target="_blank">google fonts</a>
-                <a class="credits" href="https://unsplash.com/" target="_blank">unsplash</a>
-            </div>
-        </footer>
-      </div>
+    <header>
+      <label for="navToggle" class="navToggleLabel" onclick="toggleMenuSelector()">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </label>
+      <a class="logoAnchor" href="/"><img src="img/seahagcafe.png" alt="Sea Hag Cafe Logo" href="/" class="logo"></a>
+      <input type="checkbox" id="navToggle" class="navToggle">
+      <nav>
+        <ul>
+          <li><a href="/blog" onclick="toggleMenuSelector()">Blog</a></li>
+          <li><a href="/projects">Projects</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="content">
+    <img class="profileImage" src="/img/profile.png" alt="Sea Hag's photo showing Myriah against a dark, sea green backdrop">
+            <p class="introText">
+              I'm Myriah, an aspiring and self-taught coder, developer, and creative.
+              <br>
+              Look through my personal projects, and find me in other corners of the internet.
+            </p>
+            <!-- <hr> -->
+  </div>
   </body>
 </html>
