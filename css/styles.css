@@ -29,16 +29,6 @@ html {
     padding: 0;
 }
 
-.content {
-    background-image: url(//unsplash.it/1000/1000);
-    height: 200vh;
-    background-color: #333;
-    background-size: cover;
-    background-blend-mode: multiply;
-    display: grid;
-    place-items: center;
-}
-
 header {
     background: var(--primary-color);
     text-align: center;
@@ -54,6 +44,11 @@ header {
    right: 0%;
    height: 110px;
    cursor: pointer;
+}
+
+.logoAnchor {
+    display: inline-block;
+    line-height: 0;
 }
 
 .navToggle {
@@ -156,6 +151,33 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+.content {
+    position: fixed;
+    overflow: scroll;
+    top: 110px;
+    height: calc(100vh - 110px);
+    background-color: var(--primary-color);
+    color: var(--primary-neutral-color);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileImage {
+    width: 9rem;
+    height: auto;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    border-radius: 50%;
+}
+
+.introText {
+    text-align: center;
+    line-height: 1.6;
+}
+
 @media screen and (min-width: 800px) {
     .navToggleLabel {
         display: none;
@@ -168,6 +190,7 @@ nav a:hover {
 
     .logo {
         grid-column: 2 / 3;
+        margin-left: 1.5em;
     }
 
     nav {
