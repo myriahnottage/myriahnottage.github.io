@@ -1,7 +1,7 @@
 :root {
     --primary-color: #27272A;
     --primary-transparent: rgba(39,39,42, .75);
-    --primary-color-100: #D983DE;
+    --primary-color-100: #89f2e4;
     --primary-neutral-color: whitesmoke;
     --accent-color: #D580DA;
 }
@@ -68,7 +68,7 @@ body {
     width: calc(100% + var(--padding));
     left: calc(var(--padding) * -1);
     bottom: -1px;
-    background: var(--primary-color-100);
+    background: var(--accent-color);
     transform-origin: left;
     transition: transform 500ms ease;
 }
@@ -122,7 +122,7 @@ body {
     display: inline-block;
     text-decoration: none;
     color: var(--primary-color);
-    background-color: var(--primary-color-100);
+    background-color: var(--accent-color);
     padding: .75em 1.25em;
     border-radius: .25em;
 }
