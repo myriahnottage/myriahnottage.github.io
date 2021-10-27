@@ -11,6 +11,7 @@ html {
 
 :root {
     --primary-color: #27272A;
+    --primary-transparent: rgba(39,39,42, .75);
     --primary-color-100: #89f2e4;
     --primary-neutral-color: whitesmoke;
     --accent-color: #D580DA;
@@ -29,8 +30,13 @@ html {
     padding: 0;
 }
 
+body {
+    background-color: var(--primary-color);
+    font-family: sans-serif;
+}
+
 header {
-    background: var(--primary-color);
+    background: var(--primary-transparent);
     text-align: center;
     position: fixed;
     width: 100%;
@@ -44,6 +50,7 @@ header {
    right: 0%;
    height: 110px;
    cursor: pointer;
+   border-radius: 50%;
 }
 
 .logoAnchor {
@@ -154,8 +161,8 @@ nav a:hover {
 .content {
     position: fixed;
     overflow: scroll;
-    top: 110px;
-    height: calc(100vh - 110px);
+    top: 130px;
+    height: calc(100vh - 130px);
     width: 100vw;
     background-color: var(--primary-color);
     color: var(--primary-neutral-color);
@@ -164,6 +171,7 @@ nav a:hover {
     align-items: center;
     display: flex;
     flex-direction: column;
+
 }
 
 .profileImage {
@@ -171,7 +179,7 @@ nav a:hover {
     height: auto;
     margin-top: 15vh;
     margin-bottom: 10vh;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .introText {

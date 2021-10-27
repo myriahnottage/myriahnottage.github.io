@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #27272A;
+    --primary-transparent: rgba(39,39,42, .75);
+    --primary-color-100: #D983DE;
+    --primary-neutral-color: whitesmoke;
+    --accent-color: #D580DA;
+}
+
+body {
+    font-family: sans-serif;
+    padding-right: 15em;
+}
+
+.project {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.card {
+    color: var(--primary-neutral-color);
+    background-size: cover;
+    background-position: center;
+    max-width: 35ch;
+    border-radius: .5rem; /* when there's a background on a nested element (.cardContent in this case), then you need to put overflow hidden for the nested element's corners to get cut off*/
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.magic {
+    background-image: url(../img/magic8ball.png);
+}
+
+.parallax {
+    background-image: url(../img/roadtrip.png);
+}
+
+.card:hover,
+.card:focus-within {
+    transform: scale(1.05);
+}
+
+.cardContent {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / .01) 1%,
+        hsl(20 0% 0% / .3) 3%,
+        hsl(20 0% 0% / .4) 5%,
+        hsl(20 0% 0% / .75) 15%,
+        hsl(0 0% 0% / 1)
+    );
+}
+
+.cardTitle {
+    position: relative;
+    font-size: 200%;
+    width: max-content; /* max-width really only works if there's just one line of text*/
+}
+
+.cardTitle::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + var(--padding));
+    left: calc(var(--padding) * -1);
+    bottom: -1px;
+    background: var(--primary-color-100);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card:hover .cardTitle::after,
+.card:focus-within .cardTitle::after {
+    transform: scaleX(1);
+}
+
+.cardBody {
+    color: rgba(255, 255, 255, .85);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* (hover) is for animations when people are on a device that has a clicker that can hover */
+@media (hover) {
+    .cardContent {
+        transform: translateY(35%);
+        transition: transform 500ms ease;
+    }
+
+    .card:hover .cardContent,
+    .card:focus-within .cardContent {
+        transform: translateY(0);
+        transition-delay: 500ms;
+    }
+    /* prevent this transition delay for accessibility */
+    .card:focus-within .cardContent {
+        transition-duration: 0ms;
+    }
+
+    .cardContent > *:not(.cardTitle) {
+        opacity: 0;
+        transition: opacity 500ms linear;
+    }
+
+    .card:hover .cardContent > *:not(.cardTitle),
+    .card:focus-within .cardContent > *:not(.cardTitle) {
+        opacity: 1;
+        transition-delay: 1000ms;
+    }
+
+    .cardTitle::after {
+        transform: scaleX(0);
+    }
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--primary-color-100);
+    padding: .75em 1.25em;
+    border-radius: .25em;
+}
+
+.button:hover, .button:focus {
+    background-color: var(--primary-neutral-color);
+}
+
+/* media query for users who have set motion preferences to reduced motion */
+/* can also use (prefers-reduced-motion: no-preference) to house all animations instead */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto!important;
+        transition-delay: 0ms!important;
+    }
+}
